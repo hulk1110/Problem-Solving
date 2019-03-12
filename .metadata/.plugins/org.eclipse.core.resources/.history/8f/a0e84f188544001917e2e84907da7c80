@@ -1,0 +1,15 @@
+package com.problems;
+
+public class CheckForBalancedParentheses {
+	public static void main(String[] args) {
+		String str = "GeeksForGeeks"; 
+        int k = 3; 
+        getSmallestAndLargest(str, k); 
+	}
+
+	private static void getSmallestAndLargest(String str, int k) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+}
