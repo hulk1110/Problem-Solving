@@ -1,0 +1,10 @@
+package com.problems;
+
+public class BalancedParaCheck {
+
+	static class stack{
+		int top =-1;
+		char items[]= new char[100];
+		
+	}
+}

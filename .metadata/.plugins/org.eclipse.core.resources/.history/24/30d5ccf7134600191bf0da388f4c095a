@@ -1,0 +1,12 @@
+package com.java8;
+
+import java.util.List;
+
+public class User {
+
+	String name;
+
+	int age;
+	private List<String> phoneNumbers;
+
+}
