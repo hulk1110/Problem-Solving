@@ -1,0 +1,8 @@
+package com.problems;
+
+public class PangramCheckUtils {
+
+	public static void main(String[] args) {
+		
+	}
+}

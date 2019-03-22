@@ -1,0 +1,12 @@
+package com.designPattern.facade;
+
+public class Client {
+public static void main(String[] args) {
+	HotelKeeper hotelKeeper= new HotelKeeper();
+	
+	VegMenu vegMenu= hotelKeeper.getVegMenu();
+	System.out.println("hotel kepper "+ vegMenu);
+	NonVegMenu nonVegMenu= hotelKeeper.getNonVegMenu();
+	Both both= hotelKeeper.getVegNonMenu();
+}
+}

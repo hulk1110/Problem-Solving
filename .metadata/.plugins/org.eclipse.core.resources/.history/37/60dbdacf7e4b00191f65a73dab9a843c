@@ -1,0 +1,14 @@
+package com.java8;
+
+import java.util.List;
+import java.util.Observable;
+
+public class StockServer {
+
+	public static Observable<StockInfo> getFeed(List<String> symbols){
+		
+		System.out.println("...created...");
+		return Observable.create(emitter -> e)
+	}
+
+}

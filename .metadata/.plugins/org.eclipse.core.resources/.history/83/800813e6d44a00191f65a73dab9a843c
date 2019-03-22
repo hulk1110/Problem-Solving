@@ -1,0 +1,9 @@
+package com.java8;
+
+import java.util.Observable;
+
+public class StockServer {
+
+	public static Observable<StockInfo>
+
+}

@@ -1,0 +1,5 @@
+package com.designPattern.facade;
+
+public class NonVegMenu extends Menus{
+
+}

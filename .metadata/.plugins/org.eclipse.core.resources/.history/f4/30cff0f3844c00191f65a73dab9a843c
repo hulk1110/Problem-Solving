@@ -1,0 +1,12 @@
+package com.designPattern.facade;
+
+public class HotelKeeper {
+
+	public VegMenu getVegMenu(){
+		VegRestaurant vegRestaurant
+		= new VegRestaurant();
+		VegMenu vegMenu= (VegMenu) vegRestaurant.getMenus();
+		return vegMenu;
+		
+	}
+}
