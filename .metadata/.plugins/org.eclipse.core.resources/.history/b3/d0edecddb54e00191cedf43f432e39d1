@@ -1,0 +1,26 @@
+package com.designPattern.strategy;
+
+public class PlayerCreator {
+
+	public Player createPlayer(PlayerTypes playerTypes) {
+
+		switch (playerTypes) {
+		case TENNIS:
+
+			return new TennisPlayer();
+			break;
+		case FOOTBALL:
+
+			return new FootBallPlayer();
+			break;
+			
+		case SNOOKER:
+
+			return new SnookerPlayer();
+			break;
+
+		default:
+			break;
+		}
+	}
+}

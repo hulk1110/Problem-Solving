@@ -1,0 +1,8 @@
+package com.designPattern.strategy;
+
+public class Player {
+
+	void String getMePlayer(){
+		return "this is just a player";
+	}
+}

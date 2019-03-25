@@ -1,0 +1,5 @@
+package com.designPattern.strategy;
+
+public class TennisPlayer extends Player {
+
+}

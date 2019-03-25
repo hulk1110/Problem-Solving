@@ -1,0 +1,12 @@
+package com.problems;
+
+import java.util.Map;
+import java.util.function.Supplier;
+
+import com.designPattern.strategy.Player;
+
+public class PlayerSupplier {
+
+	private static final Map<String ,Supplier<Player>>
+	PLAYER_SUPPLIER;
+}

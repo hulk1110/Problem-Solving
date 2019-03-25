@@ -1,0 +1,16 @@
+package com.designPattern.strategy;
+
+public class PlayerCreator {
+
+	public Player createPlayer(PlayerTypes playerTypes){
+		
+		switch (playerTypes) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+}
