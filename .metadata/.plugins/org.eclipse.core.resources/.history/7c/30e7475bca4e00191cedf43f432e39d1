@@ -1,0 +1,10 @@
+package com.java8;
+
+import java.util.function.Supplier;
+
+public class SupplierInterfaceDemo  {
+
+	Supplier<String> supplier = ()- >{
+		System.out.println("Hello from monty");
+	};
+}

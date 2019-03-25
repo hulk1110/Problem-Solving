@@ -1,0 +1,7 @@
+package com.java8;
+
+import java.util.function.Supplier;
+
+public class SupplierInterfaceDemo implements Supplier<T> {
+
+}

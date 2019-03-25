@@ -19,8 +19,5 @@ public class SupplierInterfaceDemo  {
 		System.out.println(arrayOfString.stream().findAny()
 		.orElseGet(supplier));
 		
-		// or we can alternatively write as
-		System.out.println(arrayOfString.stream().findAny()
-				.orElseGet(()-> "Hello from monty"));
 	}
 }

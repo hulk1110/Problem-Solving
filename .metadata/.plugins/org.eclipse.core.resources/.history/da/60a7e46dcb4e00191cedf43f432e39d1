@@ -14,7 +14,7 @@ public class SupplierInterfaceDemo  {
 		System.out.println(supplier.get());
 		
 		
-		List<String> arrayOfString = Arrays.asList("a","b");
+		//List<String> arrayOfString = Arrays.asList("a","b");
 		
 		System.out.println(arrayOfString.stream().findAny()
 		.orElseGet(supplier));
