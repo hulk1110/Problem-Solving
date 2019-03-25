@@ -1,0 +1,16 @@
+package com.java8;
+
+import java.util.function.Consumer;
+
+public class ConsumerInterfaceDemo implements Consumer<Integer> {
+
+	
+	public static void main(String[] args) {
+		ConsumerInterfaceDemo consumerInterfaceDemo = (t)->
+		{
+			System.out.println("printing :" +t);
+		};
+		}
+	
+
+}

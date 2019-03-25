@@ -1,0 +1,13 @@
+package com.java8;
+
+import java.util.function.Consumer;
+
+public class ConsumerInterfaceDemo implements Consumer<Integer> {
+
+	@Override
+	public void accept(Integer t) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

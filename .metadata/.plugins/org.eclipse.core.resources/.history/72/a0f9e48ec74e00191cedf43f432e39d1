@@ -1,0 +1,15 @@
+package com.java8;
+
+import java.util.function.Consumer;
+
+public class ConsumerInterfaceDemo {
+
+	
+	public static void main(String[] args) {
+		
+		Consumer<Integer> consumer = (Integer i ) -> {
+			System.out.println("the number is"+i);
+		};
+	
+
+}
