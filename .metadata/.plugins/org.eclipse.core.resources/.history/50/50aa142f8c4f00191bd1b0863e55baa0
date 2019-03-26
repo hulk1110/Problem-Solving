@@ -1,0 +1,6 @@
+package com.problems;
+
+public class TennisPlayer implements  SupplyPlayer{
+
+	
+}

@@ -1,0 +1,6 @@
+package com.anz.codeOptimizationForSwitch;
+
+public class Test {
+	CreatePlayerCommand createCommand = new CreatePlayerCommand();
+	Player snookerPlayer = createCommand.createPlayer("SNOOKER");
+}

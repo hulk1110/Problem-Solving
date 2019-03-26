@@ -1,0 +1,11 @@
+package com.anz.codeOptimizationForSwitch;
+
+public class CreatePlayerCommand implements Command{
+
+	@Override
+	public Player create() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
