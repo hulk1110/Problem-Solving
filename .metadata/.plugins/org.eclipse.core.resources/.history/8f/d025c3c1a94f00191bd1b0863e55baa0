@@ -1,0 +1,18 @@
+package com.poc2.anz;
+
+public class PathA  implements Chain{
+
+	private Chain nextPath;
+	@Override
+	public void setNext(Chain nextInChain) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void process(Number request) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

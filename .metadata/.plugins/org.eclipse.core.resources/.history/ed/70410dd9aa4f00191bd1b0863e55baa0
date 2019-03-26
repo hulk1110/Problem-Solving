@@ -1,0 +1,12 @@
+package com.poc2.anz;
+
+public class TestTheChaining {
+public static void main(String[] args) {
+	// configuring sequence
+	ChainOfPaths path1 = new PathA();
+	ChainOfPaths path2 = new PathA();
+	ChainOfPaths path3 = new PathA();
+	path1.setNext(path2);
+	path2.setNext(path3);
+}
+}

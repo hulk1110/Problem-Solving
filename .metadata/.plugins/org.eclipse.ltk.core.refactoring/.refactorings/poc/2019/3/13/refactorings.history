@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.poc2.anz.Chain&apos; to &apos;ChainOfPaths&apos;&#x0D;&#x0A;- Original project: &apos;poc&apos;&#x0D;&#x0A;- Original element: &apos;com.poc2.anz.Chain&apos;&#x0D;&#x0A;- Renamed element: &apos;com.poc2.anz.ChainOfPaths&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Chain&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.poc2.anz{Chain.java[Chain" matchStrategy="1" name="ChainOfPaths" qualified="false" references="true" similarDeclarations="false" stamp="1553592613236" textual="false" version="1.0"/>
+</session>

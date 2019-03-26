@@ -1,0 +1,5 @@
+package com.poc2.anz;
+
+public interface Chain {
+
+}
