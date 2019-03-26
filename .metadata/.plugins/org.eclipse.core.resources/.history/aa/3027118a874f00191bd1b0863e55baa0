@@ -1,0 +1,13 @@
+package com.problems;
+
+public class SupplyPlayerImpl implements SupplyPlayer {
+
+	@Override
+	public void processPlayer(String game) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

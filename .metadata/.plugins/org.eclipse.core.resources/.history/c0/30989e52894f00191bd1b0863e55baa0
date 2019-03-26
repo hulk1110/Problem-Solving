@@ -8,6 +8,6 @@ PlayerSupplier playerSupplier= new PlayerSupplier();
 Player snookerPlayer = playerSupplier.supplyPlayer("SNOOKER");
 // Player rugbeePlayer = playerSupplier.supplyPlayer("RUGBEE");
 
-
+SupplyPlayerImpl impl= new SupplyPlayerImpl();
 }
 }

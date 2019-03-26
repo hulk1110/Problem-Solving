@@ -10,7 +10,7 @@ import com.designPattern.strategy.Player;
 import com.designPattern.strategy.SnookerPlayer;
 import com.designPattern.strategy.TennisPlayer;
 
-// this program show how to hide /minimize switch statements 
+// this program show how to hide/minimize switch statements 
 public class PlayerSupplier {
 
 	private static final Map<String, Supplier<Player>> PLAYER_SUPPLIER;
