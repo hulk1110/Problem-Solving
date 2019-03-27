@@ -1,0 +1,50 @@
+package com.anz.codeOptimizationForSwitch;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+public class PoJoUtility {
+
+	 private static final Map<String, Path> PLAYERS;
+	 static {
+	      final Map<String, Path> players = new HashMap<>();
+	      players.put("PATH-A", new Path() {
+	         @Override
+	         public PojoForPath create() {
+	            return new PathA();
+	         }
+	      });
+
+	      players.put("PATH-B", new Path() {
+	         @Override
+	         public PojoForPath create() {
+	            return new PathB();
+	         }
+	      });
+
+	      players.put("SNOOKER", new Path() {
+	         @Override
+	         public PojoForPath create() {
+	            return new PathC();
+	         }
+	      });
+
+	      PLAYERS = Collections.unmodifiableMap(players);
+	   }
+	 
+	 
+	 public Player createPlayer(String playerType) {
+	      Path path = PLAYERS.get(playerType);
+
+	      if (command == null) {
+	         throw new IllegalArgumentException("Invalid player type: "
+	            + playerType);
+	      }
+
+	      return command.create();
+	   }
+
+
+
+}

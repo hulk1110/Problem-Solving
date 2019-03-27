@@ -1,0 +1,6 @@
+package com.anz.codeOptimizationForSwitch;
+
+public interface Path {
+
+	Player create();
+}

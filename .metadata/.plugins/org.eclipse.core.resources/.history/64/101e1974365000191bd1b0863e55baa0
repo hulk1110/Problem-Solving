@@ -1,0 +1,8 @@
+package com.anz.codeOptimizationForSwitch;
+
+public class Test {
+public static void main(String[] args) {
+	PoJoUtility createCommand = new PoJoUtility();
+	Player snookerPlayer = createCommand.createPojoforPath("SNOOKER");
+}
+}
