@@ -1,0 +1,7 @@
+package com.poc3.anz;
+
+public class ResponseData {
+
+	int code,
+	int message;
+}

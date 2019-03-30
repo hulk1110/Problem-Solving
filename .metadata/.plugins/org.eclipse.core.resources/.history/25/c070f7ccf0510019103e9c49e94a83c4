@@ -1,0 +1,25 @@
+package com.poc3.anz;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.poc1.anz.Path;
+import com.poc1.anz.PathA;
+import com.poc1.anz.PathB;
+import com.poc1.anz.PathC;
+import com.poc1.anz.PojoForPath;
+
+public class PathProcessUtils {
+
+	private static final Map<String, Path> PLAYERS;
+
+	static {
+		final Map<String, ProcessCollection> pathMap = new HashMap<>();
+		
+		
+		PLAYERS = Collections.unmodifiableMap(players);
+	}
+
+
+}

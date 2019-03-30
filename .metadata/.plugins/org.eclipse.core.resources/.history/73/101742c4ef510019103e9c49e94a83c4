@@ -1,0 +1,10 @@
+package com.poc3.anz;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PathProcessUtils {
+
+	Map<String, ProcessCollection> pathMap= new HashMap<String, ProcessCollection>();
+	
+}

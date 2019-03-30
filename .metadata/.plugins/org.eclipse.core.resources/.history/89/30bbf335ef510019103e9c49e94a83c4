@@ -1,0 +1,17 @@
+package com.poc3.anz;
+
+public class ResponseData {
+	int code;
+	String message;
+
+	public ResponseData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ResponseData(int code, String message) {
+		super();
+		this.code = code;
+		this.message = message;
+	}
+
+}

@@ -6,36 +6,36 @@ import java.util.Map;
 
 public class PoJoUtility {
 
-	private static final Map<String, Path> PLAYERS;
+	private static final Map<String, Path> PATHS;
 
 	static {
-		final Map<String, Path> players = new HashMap<>();
-		players.put("PATH-A", new Path() {
+		final Map<String, Path> paths = new HashMap<>();
+		paths.put("PATH-A", new Path() {
 			@Override
 			public PojoForPath create() {
 				return new PathA();
 			}
 		});
 
-		players.put("PATH-B", new Path() {
+		paths.put("PATH-B", new Path() {
 			@Override
 			public PojoForPath create() {
 				return new PathB();
 			}
 		});
 
-		players.put("PATH-C", new Path() {
+		paths.put("PATH-C", new Path() {
 			@Override
 			public PojoForPath create() {
 				return new PathC();
 			}
 		});
-
-		PLAYERS = Collections.unmodifiableMap(players);
+		
+		PATHS = Collections.unmodifiableMap(paths);
 	}
 
 	public PojoForPath createPojoforPath(String pathProvided) {
-		Path path = PLAYERS.get(pathProvided);
+		Path path = PATHS.get(pathProvided);
 
 		if (path == null) {
 			throw new IllegalArgumentException("Invalid path type: " + pathProvided);

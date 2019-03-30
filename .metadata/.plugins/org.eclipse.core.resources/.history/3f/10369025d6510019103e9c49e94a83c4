@@ -1,0 +1,10 @@
+package com.poc3.anz;
+
+public class ProceePathC implements ProcessPath{
+
+	@Override
+	public void processForPath() {
+		// TODO Auto-generated method stub
+		
+	}
+}

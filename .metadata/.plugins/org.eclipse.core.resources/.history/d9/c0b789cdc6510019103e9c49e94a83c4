@@ -1,0 +1,10 @@
+package com.poc3.anz;
+
+import java.util.Map;
+
+public class PojoUtils {
+
+	public static void main(String[] args) {
+	Map<String, Object>
+	}
+}

@@ -4,6 +4,6 @@ public class PathA extends PojoForPath {
 	public PathA() {
 		// TODO Auto-generated constructor stub
 
-		System.out.println("-- we are in pojo class PathA which need to be passed as response body--");
+		System.out.println("-- we are in pojo class PathA which will return a collection");
 	}
 }

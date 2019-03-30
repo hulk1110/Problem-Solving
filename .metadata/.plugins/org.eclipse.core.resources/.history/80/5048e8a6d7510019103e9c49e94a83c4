@@ -1,0 +1,10 @@
+package com.poc3.anz;
+
+public class ProcessPathD implements ProcessPath{
+
+	@Override
+	public void processForPath() {
+		// TODO Auto-generated method stub
+		System.out.println("here is logic for creating pojo for path-D");
+	}
+}

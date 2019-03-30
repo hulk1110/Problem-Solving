@@ -1,0 +1,37 @@
+package com.poc3.anz;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import com.poc1.anz.Path;
+import com.poc1.anz.PathA;
+import com.poc1.anz.PojoForPath;
+
+public class PathProcessUtils {
+
+	private static final Map<String, Path> PATHS;
+
+	
+		static {
+			final Map<String, Path> paths = new HashMap<>();
+			paths.put("PATH-A", new processCollection() {
+				@Override
+				public PojoForPath create() {
+					return new PathA();
+				}
+			});
+			
+			paths.put("PATH-B", new Path() {
+				@Override
+				public PojoForPath create() {
+					return new PathA();
+				}
+			});
+
+		
+		
+			PATHS = Collections.unmodifiableMap(paths);
+	}
+
+
+}

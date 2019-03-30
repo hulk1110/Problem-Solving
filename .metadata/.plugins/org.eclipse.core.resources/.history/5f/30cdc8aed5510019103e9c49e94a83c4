@@ -1,0 +1,21 @@
+package com.poc3.anz;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PojoUtils {
+
+	public static void main(String[] args) {
+	Map<String, Object> hm= new HashMap<String, Object>();
+	hm.put("path1", new ProcesspathA());
+	hm.put("path2",new ProcessPathB());
+	hm.put("path3",new HashMap<>().put("nestedMap1", new ProceePathC()));
+	hm.put("path4",new ProcessPathD());
+	hm.put("path5",new HashMap<>().put("nestedMap2", new ProceePathC()));
+	
+	
+	
+	
+	
+	}
+}
