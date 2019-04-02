@@ -51,8 +51,8 @@ public class PathProcessUtils {
 			public void display() {
 				// TODO Auto-generated method stub
 			       System.out.println("This is case two in which we are getting list of response");
-			      //  processAndConvertToListOfResponse();
-				System.out.println(Arrays.toString( processAndConvertToListOfResponse().toArray()));
+			       processAndConvertToListOfResponse();
+				System.out.println(Arrays.toString(responseDatas.toArray()));
 			
 
 			}});
@@ -64,7 +64,7 @@ public class PathProcessUtils {
 			public CutomResponse processListOfCollection() {
 				// TODO Auto-generated method stub
 
-				List<ResponseData> responseDatas = new ArrayList<>();
+				List<ResponseData> responseDatas = null;
 				responseDatas.add(new ResponseData(1, "this is first Entry"));
 				responseDatas.add(new ResponseData(2, "this is second Entry"));
 				responseDatas.add(new ResponseData(3, "this is third Entry"));
@@ -77,11 +77,9 @@ public class PathProcessUtils {
 
 			@Override
 			public void display() {
-				// processListOfCollection();
+				processListOfCollection();
 				// TODO Auto-generated method stub
-				  System.out.println("This is case three in which we are response having list of responses");
-			      //  processAndConvertToListOfResponse();
-				System.out.println(processListOfCollection());
+				System.out.println("Hello");
 			}
 		});
 		

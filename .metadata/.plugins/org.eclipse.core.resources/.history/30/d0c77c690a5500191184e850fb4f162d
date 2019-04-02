@@ -77,11 +77,11 @@ public class PathProcessUtils {
 
 			@Override
 			public void display() {
-				// processListOfCollection();
+				processListOfCollection();
 				// TODO Auto-generated method stub
-				  System.out.println("This is case three in which we are response having list of responses");
+				  System.out.println("This is case two in which we are getting list of response");
 			      //  processAndConvertToListOfResponse();
-				System.out.println(processListOfCollection());
+				System.out.println(Arrays.toString( processListOfCollection().toArray()));
 			}
 		});
 		
