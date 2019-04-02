@@ -1,5 +1,6 @@
 package com.poc3.anz;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -7,10 +8,10 @@ import java.util.Map;
 
 public class PathProcessUtils {
 
-	private static final Map<String, ProcessPath> PATHS;
+	private static  Map<String, ProcessPath> PATHS=null;
 
 	static {
-		final Map<String, ProcessPath> paths = new HashMap<>();
+		 Map<String, ProcessPath> paths = new HashMap<>();
 
 		// case:1 when we return only the response data
 
@@ -47,10 +48,12 @@ public class PathProcessUtils {
 			@Override
 			public void display() {
 				// TODO Auto-generated method stub
-				System.out.println(processAndConvertToListOfResponse());
-			}
+			       System.out.println("This is case two in which we are getting list of response");
+		
+				System.out.println(Arrays.toString(responseDatas.toArray()));
+			
 
-		});
+			}});
 
 		// case:3 when we return response of list of datas
 		paths.put("PATHC", new ProcessListOfCollection() {
@@ -73,7 +76,7 @@ public class PathProcessUtils {
 			@Override
 			public void display() {
 				// TODO Auto-generated method stub
-				System.out.println(processListOfCollection());
+				System.out.println("Hello");
 			}
 		});
 		

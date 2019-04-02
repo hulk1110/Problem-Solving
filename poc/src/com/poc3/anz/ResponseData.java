@@ -1,8 +1,8 @@
 package com.poc3.anz;
 
 public class ResponseData {
-	int code;
-	String message;
+	private int code;
+	private String message;
 
 	public ResponseData() {
 		// TODO Auto-generated constructor stub
@@ -31,7 +31,7 @@ public class ResponseData {
 	
 	@Override
 	public String toString() {
-		return "ResponseData [code=" + code + ", message=" + message + "]";
+		return "ResponseData [code=" + this.getCode() + ", message=" + this.getMessage() + "]";
 	}
 
 }
