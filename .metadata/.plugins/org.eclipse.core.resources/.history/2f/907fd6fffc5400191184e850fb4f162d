@@ -1,0 +1,17 @@
+package com.poc3.anz;
+
+import java.util.List;
+
+public class CutomResponse2 {
+	
+	List<ResponseData> responseDatas;
+
+	public List<ResponseData> getResponseDatas() {
+		return responseDatas;
+	}
+
+	public void setResponseDatas(List<ResponseData> responseDatas) {
+		this.responseDatas = responseDatas;
+	}
+	
+}

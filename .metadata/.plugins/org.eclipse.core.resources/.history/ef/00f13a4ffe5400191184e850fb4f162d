@@ -1,0 +1,8 @@
+package com.poc3.anz;
+public class Test {
+public static void main(String[] args) {
+	PathProcessUtils poJoUtility = new PoJoUtility();
+	PojoForPath path = poJoUtility.createPojoforPath("PATH-A");
+	// PojoForPath path2 = poJoUtility.createPojoforPath("PATH-Z");
+}
+}

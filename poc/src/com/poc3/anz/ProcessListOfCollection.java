@@ -1,8 +1,8 @@
 package com.poc3.anz;
 
-import java.util.List;
+
 
 public interface ProcessListOfCollection extends ProcessPath {
 
-	List<ResponseData> processListOfCollection();
+	CutomResponse processListOfCollection();
 }

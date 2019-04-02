@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.poc3.anz.ProcessListResponse&apos; to &apos;ProcessListOfResponse&apos;&#x0D;&#x0A;- Original project: &apos;poc&apos;&#x0D;&#x0A;- Original element: &apos;com.poc3.anz.ProcessListResponse&apos;&#x0D;&#x0A;- Renamed element: &apos;com.poc3.anz.ProcessListOfResponse&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProcessListResponse&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.poc3.anz{ProcessListResponse.java[ProcessListResponse" matchStrategy="1" name="ProcessListOfResponse" qualified="false" references="true" similarDeclarations="false" stamp="1554177277099" textual="false" version="1.0"/>
+</session>

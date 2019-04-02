@@ -1,0 +1,79 @@
+package com.poc3.anz;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class PathProcessUtils {
+
+	private static final Map<String, ProcessPath> PATHS;
+
+	static {
+		final Map<String, ProcessPath> paths = new HashMap<>();
+		paths.put("PATH-A", new ProcessCollection() {
+
+			@Override
+			public ResponseData processCollection() {
+				// TODO Auto-generated method stub
+				return new ResponseData(1, "this path is returing a simple object");
+			}
+		});
+
+//		paths.put("PATH-B", new ProcessListOfResponse() {
+//               List<ResponseData> responseDatas;
+//			@Override
+//			public List<ResponseData> processCollection() {
+//				// TODO Auto-generated method stub
+//				responseDatas.add(e)
+//				return null;
+//			}});
+
+//		paths.put("PATH-C", new ProcessListOfCollection() {
+//
+//			@Override
+//			public List<CutomResponse2> processListOfCollection() {
+//				// TODO Auto-generated method stub
+//				return null;
+//			}
+//
+//			;
+
+		
+		paths.put("PATHB", new ProcessListOfResponse() {
+			
+
+			List<ResponseData> responseDatas=null;
+			
+			@Override
+			public List<ResponseData> processAndConvertToListOfResponse() {
+				// TODO Auto-generated method stub
+				responseDatas.add(new ResponseData(1,"this is first Entry"));
+				responseDatas.add(new ResponseData(2,"this is second Entry"));
+				responseDatas.add(new ResponseData(3,"this is third Entry"));
+				responseDatas.add(new ResponseData(4,"this is fourth Entry"));
+				return responseDatas;
+			}
+
+			
+		});
+		
+       paths.put("PATHB", new ProcessListOfCollection() {
+		
+		@Override
+		public List<CutomResponse2> processListOfCollection() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	});
+		
+		
+		
+		
+		
+		
+		PATHS = Collections.unmodifiableMap(paths);
+	}
+
+}

@@ -28,5 +28,10 @@ public class ResponseData {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+	
+	@Override
+	public String toString() {
+		return "ResponseData [code=" + code + ", message=" + message + "]";
+	}
 
 }
