@@ -1,7 +1,0 @@
-package com.problems;
-
-public class PlayerSupplier {
-
-	private static final Map<String ,Supplier<Player>>
-	PLAYER_SUPPLIER;
-}

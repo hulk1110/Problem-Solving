@@ -1,8 +1,0 @@
-package com.problems;
-
-public class Snippet {
-	public static void main(String[] args) {
-		processPlayer
-	}
-}
-

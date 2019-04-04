@@ -1,5 +1,0 @@
-package com.poc2.anz;
-
-public class PathA  implements Chain{
-
-}

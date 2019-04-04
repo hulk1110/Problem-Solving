@@ -10,8 +10,6 @@
 <fullyQualifiedTypeName name="com.designPattern.strategy.Player"/>
 <fullyQualifiedTypeName name="com.java8.ConsumerInterfaceDemo"/>
 <fullyQualifiedTypeName name="java.util.function.Consumer"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.java8.PredicateInterfaceDemo"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="java.util.function.Predicate"/>
@@ -30,4 +28,14 @@
 <fullyQualifiedTypeName name="com.poc2.anz.Path"/>
 <fullyQualifiedTypeName name="com.anz.codeOptimizationForSwitch.PojoForPath"/>
 <fullyQualifiedTypeName name="com.anz.codeOptimizationForSwitch.PoJoUtility"/>
+<fullyQualifiedTypeName name="com.poc3.anz.ProcessCollection"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.poc3.anz.ProcessListOfResponse"/>
+<fullyQualifiedTypeName name="com.poc3.anz.ProcessListOfCollection"/>
+<fullyQualifiedTypeName name="com.poc3.anz.CutomResponse"/>
+<fullyQualifiedTypeName name="com.poc3.anz.PathProcessUtils"/>
+<fullyQualifiedTypeName name="com.poc3.anz.ProcessPath"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.poc3.anz.ResponseData"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

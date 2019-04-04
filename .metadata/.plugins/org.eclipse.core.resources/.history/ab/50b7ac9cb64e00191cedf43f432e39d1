@@ -1,5 +1,0 @@
-package com.designPattern.strategy;
-
-public class FootBallPlayer extends Player {
-
-}

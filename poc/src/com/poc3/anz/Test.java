@@ -10,5 +10,9 @@ public class Test {
 		path2.display();
 		ProcessPath path3 = utility.createPojoforPath("PATHC");
 		path3.display();
+		
+		
+		ProcessPath path4 = utility.createPojoforPath("PATHD");
+		path4.display();
 	}
 }

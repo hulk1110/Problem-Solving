@@ -9,10 +9,14 @@ import java.util.Map;
 
 public class PathProcessUtils {
 
-	private static  Map<String, ProcessPath> PATHS=null;
+	private static Map<String, ProcessPath> PATHS = null;
 
 	static {
-		 Map<String, ProcessPath> paths = new HashMap<>();
+		
+		boolean typeA =false;
+		boolean typeB =true;
+		
+		Map<String, ProcessPath> paths = new HashMap<>();
 
 		// case:1 when we return only the response data
 
@@ -39,7 +43,7 @@ public class PathProcessUtils {
 			@Override
 			public List<ResponseData> processAndConvertToListOfResponse() {
 				// TODO Auto-generated method stub
-				responseDatas=new ArrayList<>();
+				responseDatas = new ArrayList<>();
 				responseDatas.add(new ResponseData(1, "this is first Entry"));
 				responseDatas.add(new ResponseData(2, "this is second Entry"));
 				responseDatas.add(new ResponseData(3, "this is third Entry"));
@@ -50,12 +54,12 @@ public class PathProcessUtils {
 			@Override
 			public void display() {
 				// TODO Auto-generated method stub
-			       System.out.println("This is case two in which we are getting list of response");
-			      //  processAndConvertToListOfResponse();
-				System.out.println(Arrays.toString( processAndConvertToListOfResponse().toArray()));
-			
+				System.out.println("This is case two in which we are getting list of response");
+				// processAndConvertToListOfResponse();
+				System.out.println(Arrays.toString(processAndConvertToListOfResponse().toArray()));
 
-			}});
+			}
+		});
 
 		// case:3 when we return response of list of datas
 		paths.put("PATHC", new ProcessListOfCollection() {
@@ -79,24 +83,61 @@ public class PathProcessUtils {
 			public void display() {
 				// processListOfCollection();
 				// TODO Auto-generated method stub
-				  System.out.println("This is case three in which we are response having list of responses");
-			      //  processAndConvertToListOfResponse();
+				System.out.println("This is case three in which we are response having list of responses");
+				// processAndConvertToListOfResponse();
 				System.out.println(processListOfCollection());
 			}
 		});
-		
-		
-		
-		
-		
-		
-	
 
+		
+		
+		// case 4: when based upon indicator we need to get all these kind of responses
+		
+		paths.put("PATHD", typeA ? new ProcessListOfCollection() {
+
+			@Override
+			public CutomResponse processListOfCollection() {
+				// TODO Auto-generated method stub
+
+				List<ResponseData> responseDatas = new ArrayList<>();
+				responseDatas.add(new ResponseData(1, "this is first Entry"));
+				responseDatas.add(new ResponseData(2, "this is second Entry"));
+				responseDatas.add(new ResponseData(3, "this is third Entry"));
+				responseDatas.add(new ResponseData(4, "this is fourth Entry"));
+				CutomResponse cutomResponse = new CutomResponse();
+				cutomResponse.setResponseDatas(responseDatas);
+
+				return cutomResponse;
+			}
+
+			@Override
+			public void display() {
+				// processListOfCollection();
+				// TODO Auto-generated method stub
+				System.out.println("This is case four in which based upon indicator we need to get all these kind of responses");
+				// processAndConvertToListOfResponse();
+				System.out.println(processListOfCollection());
+			}
+		}:new ProcessCollection() {
+
+			@Override
+			public ResponseData processCollection() {
+				// TODO Auto-generated method stub
+				return new ResponseData(1, "this path is returing a simple object");
+			}
+
+			@Override
+			public void display() {
+				// TODO Auto-generated method stub
+				System.out.println("This is case four in which based upon indicator we need to get all these kind of responses");
+				System.out.println(processCollection());
+			}
+		}
+			);
+		
 		PATHS = Collections.unmodifiableMap(paths);
 	}
-	
-	
-	
+
 	public ProcessPath createPojoforPath(String pathProvided) {
 		ProcessPath path = PATHS.get(pathProvided);
 

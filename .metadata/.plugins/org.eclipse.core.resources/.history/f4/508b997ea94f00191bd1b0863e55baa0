@@ -1,7 +1,0 @@
-package com.poc2.anz;
-
-public class Path {
-
-	private String pathName;
-	
-}

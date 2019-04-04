@@ -1,5 +1,0 @@
-package com.poc.anz;
-
-public class SnookerPlayer extends Player {
-
-}

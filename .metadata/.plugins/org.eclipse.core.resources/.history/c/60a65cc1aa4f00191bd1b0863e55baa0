@@ -1,9 +1,0 @@
-package com.poc2.anz;
-
-public class TestTheChaining {
-public static void main(String[] args) {
-	// configuring sequence
-	ChainOfPaths path1 = new PathA();
-	
-}
-}

@@ -1,5 +1,0 @@
-package com.anz.codeOptimizationForSwitch;
-
-public class PathB extends PojoForPath {
-
-}

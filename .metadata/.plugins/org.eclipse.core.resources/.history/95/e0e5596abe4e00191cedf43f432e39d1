@@ -1,9 +1,0 @@
-package com.problems;
-
-import java.util.Map;
-
-public class PlayerSupplier {
-
-	private static final Map<String ,Supplier<Player>>
-	PLAYER_SUPPLIER;
-}
