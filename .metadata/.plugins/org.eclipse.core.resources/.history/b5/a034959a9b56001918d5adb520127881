@@ -3,7 +3,7 @@ package com.poc3.anz;
 public class Test {
 	public static void main(String[] args) {
 		PathProcessUtils utility = new PathProcessUtils();
-		ProcessPath path1 = utility.createPojoforPath("PATHA");
+		ProcessPath path1 = utility.createPojoforPath("PATH-A");
 		path1.display();
 		ProcessPath path2 = utility.createPojoforPath("PATHB");
 
@@ -14,8 +14,5 @@ public class Test {
 		
 		ProcessPath path4 = utility.createPojoforPath("PATHD");
 		path4.display();
-		
-		/*ProcessPath path5 = utility.createPojoforPath("PATHE");
-		path5.display();*/
 	}
 }

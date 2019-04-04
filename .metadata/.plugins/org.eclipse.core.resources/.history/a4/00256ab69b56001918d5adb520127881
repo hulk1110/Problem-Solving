@@ -15,7 +15,7 @@ public class Test {
 		ProcessPath path4 = utility.createPojoforPath("PATHD");
 		path4.display();
 		
-		/*ProcessPath path5 = utility.createPojoforPath("PATHE");
-		path5.display();*/
+		ProcessPath path5 = utility.createPojoforPath("PATHE");
+		path5.display();
 	}
 }

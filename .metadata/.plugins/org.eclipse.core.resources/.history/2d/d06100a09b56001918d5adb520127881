@@ -20,7 +20,7 @@ public class PathProcessUtils {
 
 		// case:1 when we return only the response data
 
-		paths.put("PATHA", new ProcessCollection() {
+		paths.put("PATH-A", new ProcessCollection() {
 
 			@Override
 			public ResponseData processCollection() {
